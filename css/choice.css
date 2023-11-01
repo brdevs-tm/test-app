@@ -1,0 +1,131 @@
+@import url("global.css");
+
+header {
+  padding: 20px 0;
+  background: #4825c2;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 18px;
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  background: #4825c2;
+  box-shadow: 11px 11px 22px #3d1fa5, -11px -11px 22px #532bdf;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.ava-dropdown {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background: #4825c2;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+  > ul {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+    > li {
+      > a {
+        color: antiquewhite;
+      }
+    }
+  }
+}
+
+.ava-dropdown-show {
+  top: 80px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.acting {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quiz-choice {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.quiz-input {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-direction: row-reverse;
+  padding: 40px 60px 40px 60px;
+  border-radius: 15px;
+  border: 2px solid #a39f9f;
+  transition: all 0.5s;
+}
+
+.quiz-input:hover {
+  border-color: #4825c2;
+}
+
+.quiz-input label {
+  font-size: 25px;
+}
+
+.quiz-input input {
+  width: 35px;
+  height: 35px;
+}
+
+.quiz-input input:active + .quiz-input {
+  background: #4825c2;
+}
+
+.get-started {
+  > button {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    background: #4825c2;
+    transition: all 0.3s;
+  }
+  > button:hover {
+    border-radius: 15px;
+    background: #4825c2;
+    box-shadow: inset 20px 20px 60px #3d1fa5, inset -20px -20px 60px #532bdf;
+  }
+}
+
+@media (max-width: 768px) {
+  .quiz-choice {
+    flex-direction: column;
+  }
+  .get-started {
+    > button {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+}

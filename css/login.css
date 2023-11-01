@@ -1,0 +1,135 @@
+@import url("global.css");
+
+input {
+  outline: none;
+  padding: 20px;
+  border: 2px solid #6b6969;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+
+input:focus {
+  border-color: red;
+  box-shadow: 0 0 5px 0px red;
+}
+
+.neutral {
+  position: relative;
+}
+
+.authorization {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.hider {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to top right, red, yellow);
+  z-index: 999;
+}
+.changer {
+  border: 2px solid white;
+  padding: 20px 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  transition: all 0.5s;
+}
+.changer:hover {
+  color: #6b6969;
+  box-shadow: inset 0 0 100px 100px white;
+}
+
+.hider-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  border-radius: 30px 0 0 30px;
+}
+
+.hider-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  border-radius: 0 30px 30px 0;
+}
+
+.sign-in,
+.sign-up {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+  gap: 40px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.form-style {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.inpwrapp {
+  position: relative;
+  width: 100%;
+}
+
+.inpwrapp label {
+  position: absolute;
+  top: 50%;
+  left: 55px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.inpwrapp input:focus + label,
+.inpwrapp input:valid + label {
+  background: white;
+  top: -10px;
+  left: 55px;
+  transform: translate(-50%, 0);
+  transition: 0.3s linear;
+  color: red;
+}

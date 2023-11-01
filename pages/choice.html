@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Choose any</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/choice.css"
+    />
+    <script src="../js/choice.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-left">
+            <div class="logo"><a>Test | App</a></div>
+          </div>
+          <div class="nav-right">
+            <div class="avatar">
+              <img
+                src="../assets/icons/avatar.svg"
+                alt="avatar"
+                width="48px"
+              /><span>user</span>
+              <div class="ava-dropdown">
+                <ul>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="acting">
+          <div class="quiz-choice">
+            <div class="solve-quiz quiz-input">
+              <label for="solve-quiz-input">Solve quiz</label
+              ><input
+                type="radio"
+                name="quiz"
+                value="solve"
+                id="solve-quiz-input"
+              />
+            </div>
+            <div class="create-quiz quiz-input">
+              <label for="create-quiz-input">Create quiz</label
+              ><input
+                type="radio"
+                name="quiz"
+                value="create"
+                id="create-quiz-input"
+              />
+            </div>
+          </div>
+          <div class="get-started"><button>Get started</button></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Create your account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/login.css"
+    />
+    <script defer src="./js/login.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <div class="authorization neutral">
+          <div class="hider-up hider">
+            <button class="changer">Create an account</button>
+          </div>
+          <div class="sign-in">
+            <div class="header">
+              <h1>Sign in</h1>
+            </div>
+            <form action="signing" class="identify form-style">
+              <div class="inputs">
+                <div class="username-row inpwrapp">
+                  <input type="text" required id="in-username" />
+                  <label for="in-username" class="username-label"
+                    >Username</label
+                  >
+                </div>
+                <div class="password-row inpwrapp">
+                  <input type="password" required id="in-password" />
+                  <label for="in-password" class="password-label"
+                    >Password</label
+                  >
+                </div>
+              </div>
+              <button type="submit" class="sign-btn signin-btn">Log in</button>
+              <a href="#">Forgot password?</a>
+            </form>
+          </div>
+          <div class="sign-up">
+            <div class="header"><h1>Sign up</h1></div>
+            <form action="signing" class="registrate form-style">
+              <div class="inputs">
+                <div class="username-row inpwrapp">
+                  <input type="text" required id="up-username" />
+                  <label for="up-username" class="username-label"
+                    >Username</label
+                  >
+                </div>
+                <div class="password-row inpwrapp">
+                  <input type="password" required id="up-password" />
+                  <label for="up-password" class="password-label"
+                    >Password</label
+                  >
+                </div>
+                <div class="repeat-password-row inpwrapp">
+                  <input
+                    type="password"
+                    required
+                    id="repeat-password"
+                    placeholder="repeat-password"
+                  />
+                </div>
+              </div>
+              <button type="submit" class="sign-btn signup-btn">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
